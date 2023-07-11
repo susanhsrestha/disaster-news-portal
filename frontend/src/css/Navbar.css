@@ -1,0 +1,79 @@
+.nav {
+  background-color: linear-gradient(to bottom right, #74ebd5, #9face6);
+}
+.hover-underline-animation {
+    position: relative;
+    color: #0087ca;
+  }
+
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover:after,
+  .hover-underline-animation.active:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add margin to create space between icon and text */
+  }
+
+  .navbar-heading {
+    font-weight: bold;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add margin to create space between icon and text */
+  }
+  
+  .navbar-heading {
+    font-weight: bold;
+  }
+  
+  .navbar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+  }
+  
+  .navbar-wrapper.visible {
+    opacity: 1;
+  }
+  
+  .navbar-wrapper.hidden {
+    opacity: 0;
+  }
+  

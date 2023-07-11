@@ -1,0 +1,74 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #74ebd5, #9face6);
+    backdrop-filter: blur(10px);
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
+  .login-form-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+  
+  .login-button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF4081;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+  }
+  
+  .login-button:hover {
+    background: linear-gradient(to bottom right, #74ebd5, #9face6);
+  }
+  
+  
+  .register-message {
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 0px;
+  }
+  
+  .register-link {
+    color: white;
+    text-decoration: underline;
+  }
+  .Toastify {
+    &__toast-container {
+      bottom: 0;
+      right: 0;
+    }
+  
+    &__toast {
+      min-height: 60px;
+      margin-bottom: 10px;
+    }
+  }

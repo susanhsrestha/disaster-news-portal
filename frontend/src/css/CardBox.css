@@ -1,0 +1,62 @@
+.bgbg {
+  background: linear-gradient(to bottom right, #74ebd5, #9face6);
+}
+
+.card {
+  /* Add your custom card styles here */
+  max-width: 345px;
+  margin-bottom: 1px; /* Decrease the spacing between cards */
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+}
+
+.card-box {
+  /* Add your custom card box styles here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: auto;
+  background: linear-gradient(to bottom right, #74ebd5, #9face6);
+  width: 100%; /* Set the width to 100% */
+  padding: 0 16px; /* Add padding to create space on the sides */
+  box-sizing: border-box; /* Include padding in the total width */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px; /* Adjust the spacing between cards */
+  margin: 0 auto; /* Center the card container */
+  max-width: 1200px; /* Increase the max-width as needed */
+}
+
+
+@media (max-width: 1024px) {
+  .card-container {
+    justify-content: center; /* Align center for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    justify-content: center; /* Align center for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    justify-content: center; /* Align center for smaller screens */
+  }
+}
+
+.more-news-container {
+  display: flex;
+  background-color: inherit;
+  justify-content: center;
+  padding: 20px;
+}
+
